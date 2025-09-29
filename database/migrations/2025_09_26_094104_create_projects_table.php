@@ -19,7 +19,7 @@ return new class extends Migration
             $table->enum('status', ['active', 'completed', 'archived', 'cancelled'])->default('active');
             $table->enum('priority', ['low', 'medium', 'high', 'urgent']);
             $table->date('start_date');
-            $table->data('end_date'); 
+            $table->date('end_date'); 
             $table->decimal('budget', 15, 2)->nullable();
             $table->timestamps();
         });
